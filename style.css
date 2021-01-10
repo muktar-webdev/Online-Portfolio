@@ -1,0 +1,330 @@
+body{
+    margin: 0;
+    font-family:  'Roboto', sans-serif;
+    background-color: #000000;
+    color: white;
+}
+
+/* Header-1-style-Start-Here */
+p{
+    color: gray;
+}
+
+header{
+    padding-bottom: 100px;
+}
+.navbar-menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color:#ec1c1c;
+    overflow: hidden;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+}
+.navbar-menu ul li{
+    float: left;
+}
+.navbar-menu ul li a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+
+    padding: 20px 20px;
+}
+.navbar-menu ul li a:hover{
+    background-color: #000000;
+    border-radius: 5px;
+}
+/* .resume-style{
+    background-color:#666566 ;
+    border-radius: 3px;
+}
+.resume-style:hover{
+    background-color: gray;
+} */
+
+section{
+    height: 370px;
+    padding-bottom: 200px;
+    display: block;
+}
+/* header-1-style-End-Here */
+
+
+.half-width{
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    padding-left: 2%;
+}
+
+.half-width-img{
+   
+    width: 100%;
+}
+.text-highlights{
+    color: #1472d1;
+}
+/* Section-1-style-Start-Here */
+
+
+/* Section-2-style-start-here */
+.about-me{
+    
+    background-color: white;
+    color: black;
+}
+ 
+
+.about-txt{
+    /* text-align: center; */
+    color: black;
+    text-align: center;
+}
+h3 .about-highlights{
+    text-align: center;
+    color: red;
+    font-size: 20px;
+}
+
+.img{
+    width: 70%;
+    height: 50%;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+.sdiv-2{
+    padding: 4%;
+    font-size: large;
+
+}
+div a{
+    text-decoration: none;
+    text-align: left;
+    background-color: red;
+    color: white;
+    padding: 15px;
+    border-radius: 3px;
+}
+/* Section-2-style-End-here */
+
+
+
+/* --section-3-start-- */
+
+.title-div{
+    display: block;
+    top: 0;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.third-width{
+    width: 25%;
+    float: left;
+    margin-left: 5%;
+    padding-left: 2%;
+    text-align: center;
+    background-color:gray;
+    height: 50%;
+    padding-top: 10px;
+}
+
+.third-width:hover{
+    background: red;
+    width: 27%;
+    transition: width 1s, height 1s, transform 1s;
+}
+
+.learning-courses{
+   height: 290px;
+}
+
+/* --End Section-3--- */
+
+
+/* --Section-4 Start-- */
+.experiences{
+    background-color: white;
+    color: black;
+}
+.experiences-div1{
+    padding-top: 1px;
+    font-size: 25px;   
+}
+.experiences-div1 h1{
+    display: inline;
+    background-image:linear-gradient(180deg,#ff0000,#eb8989);
+    color: white;
+    border-radius: 5px;
+    padding: 4px;
+}
+.experiences .experiences-div{
+    box-shadow: 5px 10px 60px gray;
+    height: 80%;
+    background-color: #daeafa9a;  
+}
+
+#full-stack{
+    border-left: 10px solid;
+    border-image: linear-gradient(180deg,tomato, #f5cab9);
+    border-image-slice: 1;
+}
+
+#fronted-developer{
+    border-left: 10px solid;
+    border-image: linear-gradient(180deg,dodgerblue,#bbd4ee);
+    border-image-slice: 1;
+}
+
+#full-stack:hover,#fronted-developer:hover{
+    background-color : #000000;
+    color: white;
+}
+/* --Section-4 End-- */
+
+
+/* --section-5 start-- */
+.skills{
+    height: 400px;
+    padding-bottom: 250px;
+    display: block;
+}
+.skills .half-width progress{
+    width: 100%;
+    background-color: black;
+    border-radius:10px;
+}
+.skills .half-width progress:hover{
+    background-color: red;
+}
+/* --section-5 End-- */
+
+
+/* --section-6 start-- */
+.my-teams{
+   height: 550px;
+    background-color: white;
+}
+
+.card{
+    width: 20%;
+    height: 80%;
+    box-shadow: 10px 10px 10px gray;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    float: left;
+    border-radius: 5px;
+    background-color: #000000;
+    padding-bottom: 2px;
+    transition: 0.5s;
+}
+
+.card:hover{
+    box-shadow:  5px 20px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card .container{
+    margin-left: 3px;
+    text-align: center;
+}
+/* --section-6 End-- */
+
+
+/* --section-7 Start-- */
+.contact-me{
+height: 510px;
+}
+
+form input,textarea{
+    padding-left: 10px;
+    font-size: 17px;
+    border-radius: 4px;
+    color: black;
+    border: 1px solid gray;
+    resize: none;
+    }
+/* --section-7 End-- */
+
+footer{
+    background-color: whitesmoke;
+    color: black;
+    padding: 15px;
+    text-align: center;
+}
+@media (max-width:668px){
+    .navbar-menu ul{
+        display: grid;
+        grid-template-columns:repeat(4,1fr) ;
+        
+    }
+    .info-section{
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+    }
+    .info-section .half-width{
+        width: 80%;
+    }
+    .about-me{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+        /* justify-content: center; */
+        /* text-align: center; */
+    }
+    .about-me .half-width{
+        width: 80%;
+    }
+    .about-me .about-highlights{
+       display: none;
+    }
+    .about-me .half-width img{
+        width: 400px;
+        height: 400px;
+    }
+    .learning-courses .third-width{
+      /* display: flex;
+      overflow: hidden;
+      border-radius: 10px;
+      text-align: center; */
+      width: 25%;
+      float: left;
+      height: 70%;
+      /* background-origin: padding-box; */
+      border-radius: 10px;
+      font-size: 20px;
+      overflow: hidden;
+      padding-top: 50px;
+      /* padding: ; */
+}
+.experiences{
+    height: 550px;
+    float: left;
+    width: 100%;
+    /* overflow: hidden; */
+}
+.experiences .half-width{
+ height: 400px;
+ border-radius: 10px;
+}
+.skills{
+    height: 1500px;
+}
+.my-teams .card{
+    display: flex;
+    flex-direction: column;
+    height: 64%;
+}
+.contact-me{
+    height: 700px;
+}
+.contact-me .half-width{
+    width: 200px;
+}
+
+}
